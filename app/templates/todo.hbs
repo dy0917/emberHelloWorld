@@ -1,0 +1,15 @@
+<h2 id="title">Simple todo</h2>
+
+<div>
+ <label>Title:</label>
+ {{input type="text" value=title placeholder="Enter your name"}}
+</div>
+<div class="text">
+ <button id="btnlogin" class="btn btn-primary ladda-button" data-style="expand-right" {{action "login"}}><span class="ladda-label">{{buttonTitle}}</span></button>
+</div>
+
+<ul>
+  {{#each item in list}}
+    <li>{{item.title}}</li>
+  {{/each}}
+</ul>
